@@ -842,7 +842,7 @@ def main(_):
       "mnli": MnliProcessor,
       "mrpc": MrpcProcessor,
       "xnli": XnliProcessor,
-      "sim" : simProcessor
+      "Sim" : SimProcessor
   }
 
   tokenization.validate_case_matches_checkpoint(FLAGS.do_lower_case,
