@@ -841,9 +841,10 @@ def main(_):
       "cola": ColaProcessor,
       "mnli": MnliProcessor,
       "mrpc": MrpcProcessor,
-      "xnli": XnliProcessor,
-      "Sim" : SimProcessor
+      "xnli": XnliProcessor
   }
+
+  processors["sim"] = SimProcessor
 
   tokenization.validate_case_matches_checkpoint(FLAGS.do_lower_case,
                                                 FLAGS.init_checkpoint)
